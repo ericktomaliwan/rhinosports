@@ -33,7 +33,7 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://localhost:3000')
+    .setUrl('http://localhost:3002')
     .setProxyUrl('http://rhino.local')
     .watch(['resources/views', 'app']);
 
