@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php (language_attributes()); ?>>
+<html <?php (language_attributes()); ?> data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,8 +18,10 @@
 
       <?php echo $__env->make('sections.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-      <main id="main" class="main">
-        <?php echo $__env->yieldContent('content'); ?>
+      <main class="flex-auto">
+        <div class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+          <?php echo $__env->yieldContent('content'); ?>
+        </div>
       </main>
 
       <?php if (! empty(trim($__env->yieldContent('sidebar')))): ?>
@@ -34,5 +36,4 @@
     <?php (do_action('get_footer')); ?>
     <?php (wp_footer()); ?>
   </body>
-</html>
-<?php /**PATH /Users/ericktomaliwan/Local Sites/rhino/app/public/wp-content/themes/rhinosports/resources/views/layouts/app.blade.php ENDPATH**/ ?>
+</html><?php /**PATH /Users/ericktomaliwan/Local Sites/rhino/app/public/wp-content/themes/rhinosports/resources/views/layouts/app.blade.php ENDPATH**/ ?>

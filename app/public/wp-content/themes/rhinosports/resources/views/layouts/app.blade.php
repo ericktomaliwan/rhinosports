@@ -1,5 +1,5 @@
 <!doctype html>
-<html @php(language_attributes())>
+<html @php(language_attributes()) data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,10 @@
 
       @include('sections.header')
 
-      <main id="main" class="main">
-        @yield('content')
+      <main class="flex-auto">
+        <div class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+          @yield('content')
+        </div>
       </main>
 
       @hasSection('sidebar')
