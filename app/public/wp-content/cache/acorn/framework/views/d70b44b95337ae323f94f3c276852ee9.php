@@ -1,12 +1,11 @@
-<header class="banner py-10">
+<header class="header banner py-10">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
     <?php if(has_nav_menu('primary_navigation')): ?>
       <nav class="nav-primary relative z-50 flex justify-between" aria-label="<?php echo e(wp_get_nav_menu_name('primary_navigation')); ?>">
         <div class="flex items-center md:gap-x-12">
-          <a class="brand" href="<?php echo e(home_url('/')); ?>">
-            <?php echo $siteName; ?>
-
-          </a>
+          <div class="header__logo">
+            <img src="<?= \Roots\asset('images/rhino_logo.jpg'); ?>" alt="<?php echo e(_e( 'Rhino Sports Logo', 'rhsp_textdomain')); ?>" width="250" height="100%">
+          </div>
           <?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'hidden md:flex md:gap-x-6', 'echo' => false]); ?>
 
         </div> <!--end flex items-center md:gap-x-12 -->

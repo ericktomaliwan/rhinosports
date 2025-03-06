@@ -12,7 +12,7 @@ domReady(async () => {
     if (hamburgerButton && mobileMenu) { // Check if elements exist
       hamburgerButton.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
-          mobileMenu.classList.toggle('fadeIn');
+          mobileMenu.classList.toggle('fade');
       });
     }
   });

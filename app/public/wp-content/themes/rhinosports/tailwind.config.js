@@ -5,7 +5,7 @@ const config = {
     extend: {
       colors: {}, // Extend Tailwind's default colors
       animation: {
-				fade: 'fadeIn 3s ease-in-out',
+				fade: 'fadeIn 0.5s ease-in-out',
 			},
       keyframes: {
 				fadeIn: {
