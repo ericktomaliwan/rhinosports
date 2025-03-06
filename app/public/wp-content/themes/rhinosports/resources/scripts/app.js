@@ -4,13 +4,18 @@ import domReady from '@roots/sage/client/dom-ready';
  * Application entrypoint
  */
 domReady(async () => {
-  const button = document.querySelector('.hamburger');
-  const mobile_menu = document.querySelector('.mobile-menu');
-  if (button) {
 
-  } else {
-    console.error("Button not found.");
-  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerButton = document.getElementById('hamburgerButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    if (hamburgerButton && mobileMenu) { // Check if elements exist
+      hamburgerButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('fadeIn');
+      });
+    }
+  });
 
 });
 
