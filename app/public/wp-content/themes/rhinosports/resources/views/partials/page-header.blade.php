@@ -1,3 +1,5 @@
 <div class="page-header">
-  <h1>{!! $title !!}</h1>
+  @if ( !is_page() )
+    <h1>{!! $title !!}</h1>
+  @endif
 </div>
