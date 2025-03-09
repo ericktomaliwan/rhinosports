@@ -1,0 +1,8 @@
+// Spacing
+@mixin spc-sect {
+    margin-bottom: 4rem;
+    @screen lg {
+        margin-bottom: 6.67rem;
+    }
+}
+  

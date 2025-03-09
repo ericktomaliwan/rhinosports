@@ -17,6 +17,7 @@
             <button id="hamburgerButton" class="relative z-10 flex h-8 w-8 items-center justify-center focus:not-data-focus:outline-hidden" aria-label="Toggle Navigation" type="button" aria-expanded="false" data-headlessui-state="">
               <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
             </button>
+            <div class="hidden" id="popover-backdrop" aria-hidden="true"></div>
             <div id="mobileMenu" class="mobile-menu hidden absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 ring-1 shadow-xl ring-slate-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in">
                 <?php echo wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'md:flex md:gap-x-6', 'echo' => false]); ?>
 

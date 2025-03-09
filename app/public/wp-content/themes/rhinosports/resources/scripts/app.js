@@ -8,11 +8,13 @@ domReady(async () => {
   document.addEventListener('DOMContentLoaded', () => {
     const hamburgerButton = document.getElementById('hamburgerButton');
     const mobileMenu = document.getElementById('mobileMenu');
+    const popover = document.getElementById('popover-backdrop');
 
     if (hamburgerButton && mobileMenu) { // Check if elements exist
       hamburgerButton.addEventListener('click', () => {
           mobileMenu.classList.toggle('hidden');
           mobileMenu.classList.toggle('fade');
+          popover.classList.toggle('hidden');
       });
     }
   });
