@@ -3,7 +3,8 @@
     @include spc-sect;
 }
 
-.wp-block-list{
+.wp-block-list,
+.wp-block-kadence-accordion{
     @apply relative mx-auto px-4 max-w-7xl sm:px-6 lg:px-8;
     @include spc-sect;
 }
@@ -12,10 +13,10 @@
     @extend .container;
   }
 
-.wp-block-kadence-column {
-      .kt-inside-inner-col {
-        > * {
-          @extend .container;
-        }
-      }
-  }
+// .wp-block-kadence-column {
+//       .kt-inside-inner-col {
+//         > * {
+//           @extend .container;
+//         }
+//       }
+//   }
