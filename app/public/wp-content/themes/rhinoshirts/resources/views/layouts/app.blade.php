@@ -18,7 +18,7 @@
       @include('sections.header')
 
       <main class="flex-auto">
-        <div class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+        <div class="overflow-hidden">
           @yield('content')
         </div>
       </main>

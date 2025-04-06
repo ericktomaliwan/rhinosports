@@ -19,7 +19,7 @@
       <?php echo $__env->make('sections.header', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
       <main class="flex-auto">
-        <div class="overflow-hidden py-20 sm:py-32 lg:pb-32 xl:pb-36">
+        <div class="overflow-hidden">
           <?php echo $__env->yieldContent('content'); ?>
         </div>
       </main>
