@@ -6,12 +6,17 @@
 .wp-block-list,
 .wp-block-kadence-accordion{
     @apply relative mx-auto px-4 max-w-7xl sm:px-6 lg:px-8;
-    //@include spc-sect;
 }
 
 .wp-block-cover__inner-container {
     @apply relative mx-auto px-4 max-w-7xl sm:px-6 lg:px-8;
-    @include spc-sect;
+    @extend .container;
+    .wp-block-cover__background {
+        @apply rounded-2xl;
+    }
+    &.alignfull{
+        @apply rounded-none;
+    }
 }
 
 .kb-row-layout-wrap {
